@@ -32,9 +32,9 @@ printMessage('Twój ruch to: ' + playerMove);
 
 if(computerMove == 'kamień' && playerMove == 'papier' || computerMove == 'papier' && playerMove == 'nożyce' || computerMove == 'nożyce' && playerMove == 'kamień'){
     printMessage( 'Ty wygrywasz! ');
-} else if(computerMove == 'kamień' && playerMove == 'nożyce' || computerMove == 'papier' && playerMove == 'kamień' || computerMove == 'nożyce' && playerMove == 'papier'){
-    printMessage( 'Przegrywasz...' );
-} else {
+} else if(computerMove == 'kamień' && playerMove == 'kamień' || computerMove == 'papier' && playerMove == 'papier' || computerMove == 'nożyce' && playerMove == 'nożyce'){
     printMessage( 'Remis!' );
+} else {
+    printMessage( 'Przegrywasz' );
 }
 
