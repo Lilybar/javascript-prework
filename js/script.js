@@ -32,7 +32,7 @@ printMessage('Twój ruch to: ' + playerMove);
 
 if(computerMove == 'kamień' && playerMove == 'papier' || computerMove == 'papier' && playerMove == 'nożyce' || computerMove == 'nożyce' && playerMove == 'kamień'){
     printMessage( 'Ty wygrywasz! ');
-} else if(computerMove == 'kamień' && playerMove == 'kamień' || computerMove == 'papier' && playerMove == 'papier' || computerMove == 'nożyce' && playerMove == 'nożyce'){
+} else if(computerMove == playerMove ){
     printMessage( 'Remis!' );
 } else {
     printMessage( 'Przegrywasz' );
