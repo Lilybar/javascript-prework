@@ -1,6 +1,6 @@
-function playGame(){
+function playGame(1,2,3){
     
-    let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+    let argPlayerMove = getMoveName(playerInput);
 
     function getMoveName(argMoveId){
         if(argMoveId == 1){
@@ -26,10 +26,10 @@ function playGame(){
 
     printMessage('Mój ruch to: ' + argComputerMove);
 
-
+    /* let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
 
     console.log('Gracz wpisał: ' + playerInput);
-    /* let argPlayerMove = getMoveName(playerInput); */
+
 
     printMessage('Twoj ruch to: ' + argPlayerMove);
 
