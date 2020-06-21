@@ -45,6 +45,8 @@ let argPlayerMove = getMoveName(playerInput)
 
 printMessage('Twoj ruch to: ' + argPlayerMove);
 
+console.log('moves:', argComputerMove, argPlayerMove);
+
 function displayResult(argComputerMove, argPlayerMove) {
     if( argComputerMove == 'kamień' && argPlayerMove == 'papier' || argComputerMove == 'papier' && argPlayerMove == 'nożyce' || argComputerMove == 'nożyce' && argPlayerMove == 'kamień' ){
     printMessage( 'Ty wygrywasz! ');
@@ -55,3 +57,6 @@ function displayResult(argComputerMove, argPlayerMove) {
     }
 }
 
+displayResult(argPlayerMove, argComputerMove);
+
+console.log(getMoveName('2'));
