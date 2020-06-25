@@ -1,6 +1,6 @@
-function playGame(1,2,3){
+function playGame(playerInput){
 
-    playerInput(arg1); /* "jak napiszesz zadeklarujesz funkcję która przyjmuje jeden argument? nazwij ten argument jak chcesz" */
+    clearMessages();
 
     function getMoveName(argMoveId){
         if(argMoveId == 1){
@@ -49,5 +49,12 @@ function playGame(1,2,3){
 
 }
 
-    
-playGame(3);
+document.getElementById('play-rock').addEventListener('click', function(){
+    printMessage('Wybrano kamień');
+});
+document.getElementById('play-paper').addEventListener('click', function(){
+    printMessage('Guzik został kliknięty');
+});
+document.getElementById('play-scissors').addEventListener('click', function(){
+    printMessage('Guzik został kliknięty');
+});
